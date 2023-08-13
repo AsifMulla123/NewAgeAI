@@ -32,18 +32,33 @@ body, h1, h2, h3, h4, h5, h6, p, ul, li {
   
   nav ul {
     list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center; /* Center the list items */
   }
   
   nav li {
-    display: inline;
+    display: inline-block; /* Display list items inline */
     margin-right: 20px;
-
   }
   
   nav a {
     text-decoration: none;
     color: #1a0942;
   }
+  
+  /* Media query for mobile devices */
+  @media (max-width: 768px) {
+    nav ul {
+      text-align: center; /* Center the list items on mobile */
+    }
+  
+    nav li {
+      display: block; /* Display list items as blocks on mobile */
+      margin: 10px 0; /* Adjust margin for better spacing */
+    }
+  }
+  
   
   /* Main content styling */
   main {
